@@ -6,18 +6,26 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="quiz_game.css">
-        <script src="quiz_game_login.js"></script>
-        <div>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="main.js"></script>
+           </head>
+           <body>
+            <center>
+                <h1>Game</h1>
+        <div class="col-lg-4 col-sm-8 col-xs-11 login_div1">
             <h1>Player 1 Login for the game</h1>
             <label>User Name: </label>
-            <input id="p1_input" type="text">
+            <input id="p1_input" type="text" class="form-control" placeholder="Player 1 Name">
+            <br>
         </div>
-        <div>
+
+        <div class="col-lg-4 col-sm-8 col-xs-11 login_div2">
             <h1>Player 2 Login for the game</h1>
             <label>User Name: </label>
-            <input id="p2_input" type="text">
+            <input id="p2_input" type="text" class="form-control" placeholder="Player 2 Name">
+            <br>
         </div>
-        <button id="LoginBtn">Login</button>
-    </head>
+        <button id="LoginBtn" style="width:30%" class="btn btn-primary" onclick="addUser()">Login</button>
+        </center>
+ </body>
 </html>
